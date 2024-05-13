@@ -1,4 +1,4 @@
-// By swapping the first and last elements.
+// By swapping the 1st and last elements.
 public class ReverseArray1 {
     public static void reverse(int[] numbers) {
         int first = 0, last = numbers.length - 1;
