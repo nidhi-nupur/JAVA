@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class RecursionBasics {
 
+
+    // Print the number in Decreasing Order from n to 1.
     public static void printDecreasingOrder(int number) {
 
         // Base Case
@@ -19,4 +21,7 @@ public class RecursionBasics {
         int num = input.nextInt();
         printDecreasingOrder(num);
     }
+
+
+    // Print the number in Increasing Order from 1 to n.
 }
