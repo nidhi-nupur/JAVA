@@ -7,8 +7,9 @@ public class Factorial {
         if(number == 0) {
             return 1;
         }
+        
         int factNminus1 = calculateFactorial(number - 1);
-        int fact = number * calculateFactorial(number - 1);
+        int fact = number * factNminus1;
         return fact;
     }
     public static void main(String[] args) {
