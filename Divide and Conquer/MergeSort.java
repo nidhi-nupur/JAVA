@@ -88,7 +88,7 @@ public class MergeSort {
         int size = sc.nextInt();
         int arr[] = new int[size];
         System.out.println("Enter " + size + " elements of the array: ");
-        for(int i = 0; i < size; i++) {
+        for(int i = 0; i <= size; i++) {
             arr[i] = sc.nextInt();
         }
         mergeSorting(arr, 0, arr.length-1);
