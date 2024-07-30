@@ -1,4 +1,4 @@
-/*                                                Inversion Count: in two arrays
+/*                                                Inversion Count: in two Sorted arrays
                                                      leftElement > rightElements
                                                          arr1[i] > arr2[j]
 */
