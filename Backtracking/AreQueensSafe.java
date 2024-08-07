@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-public class AreQueensSafe {
+public class AreQueensSafe { // logically TC = O(N^N) --- BUT WRONG
+    // TC = O(N!)
 
     public static void nQueens (char chessBoard[][], int row) {
         // Base Case
