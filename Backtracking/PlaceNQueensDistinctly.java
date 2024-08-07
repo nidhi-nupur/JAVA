@@ -10,7 +10,7 @@ public class PlaceNQueensDistinctly {
         }
 
         // Column Loop {Recursive Call}
-        // Placing N_Queens in N_Rows.
+        // using (N_Queens = N_Rows)Rule :- Every row should only one Q be placed.
         for (int column = 0; column < chessBoard.length; column++) {
             chessBoard[row][column] = 'Q'; // For placing 1st Queen in 1st row and so on...
             nQueens(chessBoard, row + 1); // Function Call // For placing 2nd Queen in next row and so on...
