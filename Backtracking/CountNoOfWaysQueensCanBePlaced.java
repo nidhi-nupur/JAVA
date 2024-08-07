@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 public class CountNoOfWaysQueensCanBePlaced {
-    public static void nQueens (char chessBoard[][], int row) {
+    public static void nQueens (char chessBoard[][], int row) { // logically TC = O(N^N) --- BUT WRONG
+    // TC = O(N!)
         // Base Case
         if (row == chessBoard.length) {
             count++;
