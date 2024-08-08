@@ -4,10 +4,10 @@ public class Grid_SourceToDestination {
 /* 
     For Every Cell, 2 Choices to move( Right & Down ).
 
-    -> Total times/number of Right turns == Number of Columns == m Column
-    -> Total times/number of Down turns == Number of Rows == n Row
+    -> Total times/number of Right turns = Number of Columns = m Column
+    -> Total times/number of Down turns = Number of Rows = n Row
 
-    -->  Total times/number of turns/movement == 2^(m + n).
+    -->  Total times/number of turns/movement = (m + n).
 
     Hence TC = O(2^(m + n)).
  */
