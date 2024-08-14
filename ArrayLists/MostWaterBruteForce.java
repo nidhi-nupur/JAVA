@@ -1,7 +1,7 @@
 import java.util.ArrayList;
-
+ // TC = O(n^2)
 /* // Without using function/Method
-public class MostWaterBruteForce {
+public class MostWaterBruteForce {  
     public static void main(String[] args) {
         ArrayList<Integer> height = new ArrayList<>();
         int maxWater = 0;
