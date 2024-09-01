@@ -1,3 +1,5 @@
+// Optimized Method 
+// TC = O(n)
 import java.util.ArrayList;
 
 public class PairSum1_2PointerSum {
