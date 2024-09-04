@@ -1,3 +1,6 @@
+// TC = O(nlogn)
+// SC = O(n)
+
 import java.util.ArrayList;
 import java.util.List;
 
