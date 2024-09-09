@@ -128,6 +128,25 @@ public class LinkedList {
         return -1;
     }
 
+    public int helper(Node head, int key) { // TC = O(n)
+        if(head == null) {
+            return -1;
+        }
+
+        if(head.data == key) {
+            return 0;
+        }
+        int index = helper(head.next, key);
+        if(index == -1) {
+            return -1;
+        }
+        return index + 1;
+    }
+
+    public int recSearch(int key) {
+        return helper(head, key);
+    }
+
     public static void main(String[] args) {
         LinkedList ll = new LinkedList();
         ll.print();
@@ -157,6 +176,9 @@ public class LinkedList {
         System.out.println("Size of the Linked List is: " +  ll.size); 
         System.out.println("Key found at index:" + ll.iterativeSearch(3));
         System.out.println("Key found at index:" + ll.iterativeSearch(10));
+
+        System.out.println(ll.recSearch(3));
+        System.out.println(ll.recSearch(10));
         
     }
 }
