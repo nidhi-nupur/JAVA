@@ -147,6 +147,23 @@ public class LinkedList {
         return helper(head, key);
     }
 
+
+
+    public void reverseLL() { // TC = O(n)
+        Node previous = null;
+        Node current = tail = head;
+        Node next;
+
+        while(current != null) {
+            next = current;
+            current.next = previous;
+            previous = current;
+            current = next;
+        }
+        head = previous;
+    }
+
+
     public static void main(String[] args) {
         LinkedList ll = new LinkedList();
         ll.print();
@@ -179,6 +196,10 @@ public class LinkedList {
 
         System.out.println(ll.recSearch(3));
         System.out.println(ll.recSearch(10));
+
+
+        ll.reverseLL();
+        ll.print();
         
     }
 }
