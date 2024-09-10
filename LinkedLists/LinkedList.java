@@ -163,7 +163,32 @@ public class LinkedList {
         head = previous;
     }
 
+    public void deleteNthfromEndinLL(int n) { // Amazon, Adobe, Flipkart, Qualcomm
+        // Calculate size of the ll
+        int llSize = 0;
+        Node temp = head;
+        while(temp != null) {
+            temp = temp.next;
+            llSize++;
+        }
 
+
+        if(n == llSize) {
+            head = head.next; // removeFirst operation
+            return;
+        }
+
+        // llSize - n;
+        int i = 1;
+        int iToFind = llSize - n;
+        Node previous = head;
+        while (i < iToFind) {
+            previous = previous.next;
+            i++;
+        }
+        previous.next = previous.next.next;
+        return; 
+    }
     public static void main(String[] args) {
         LinkedList ll = new LinkedList();
         ll.print();
@@ -199,6 +224,18 @@ public class LinkedList {
 
 
         ll.reverseLL();
+        ll.print();
+
+
+        ll.addFirst(1);
+        ll.addFirst(2);
+        ll.addFirst(3);
+        ll.addFirst(4);
+        ll.addFirst(5);
+        ll.addFirst(6);
+
+        ll.print();
+        ll.deleteNthfromEndinLL(3);
         ll.print();
         
     }
