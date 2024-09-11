@@ -8,8 +8,8 @@ class ListNode {
     }
 }
 
-public class PalindromeLinkedListOPTIMIZE {
-
+public class PalindromeLinkedListOPTIMIZE { // TC = O(n)
+// SC = O(1) Constant space complexity.
     public boolean isPalindrome(ListNode head) {
         if (head == null || head.next == null) {
             return true;
