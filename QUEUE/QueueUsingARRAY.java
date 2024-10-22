@@ -23,7 +23,7 @@ public class QueueUsingARRAY {
         }
 
         // Add Method - adds an element to the queue if it's not full
-        public static void add(int data) {
+        public static void add(int data) { // TC = O(1)
             if(rear == size-1) {
                 System.out.println("Queue is Full");
                 return; // Exit if full
@@ -33,7 +33,7 @@ public class QueueUsingARRAY {
         }
 
         // Remove Method - removes an element from the front of the queue
-        public static int remove() {
+        public static int remove() { // TC = O(n)
             if(isEmpty()) { // Check if the queue is empty
                 System.out.println("Empty Queue");
                 return -1; // Exit if empty
