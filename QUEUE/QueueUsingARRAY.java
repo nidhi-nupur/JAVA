@@ -8,7 +8,8 @@ public class QueueUsingARRAY {
         // Declaring static variables for the array, size, and rear
         static int array[];
         static int size;
-        static int rear;
+        static int rear; // Variable
+        // Front - always zero
 
         // Queue Constructor initializes the array with given size and sets rear to -1 
         Queue(int n) {
