@@ -3,6 +3,9 @@
  */
 
 // DSA MEDIUM Level Question - Google, Facebook(META), Amazon, Microsoft, Uber, Apple.
+
+// Time Complexity = O(n)
+// Space Complexity = O(n)
 import java.util.*;
 
 public class DecodeAString {
